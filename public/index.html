@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie Use Your Telescope" />
+    <link type="text/css" rel="stylesheet" href="/css/styles.css" />
+    <title>Tic Tac Toe Web</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="panel">
+            <h1>Tic Tac Toe Web</h1>
+        </div>
+        <div class="board">
+            <div id="a1" onclick="play('a1')" item-value=""></div>
+            <div id="a2" onclick="play('a2')" item-value=""></div>
+            <div id="a3" onclick="play('a3')" item-value=""></div>
+            <div id="b1" onclick="play('b1')" item-value=""></div>
+            <div id="b2" onclick="play('b2')" item-value=""></div>
+            <div id="b3" onclick="play('b3')" item-value=""></div>
+            <div id="c1" onclick="play('c1')" item-value=""></div>
+            <div id="c2" onclick="play('c2')" item-value=""></div>
+            <div id="c3" onclick="play('c3')" item-value=""></div>
+        </div>
+        <div class="panel">
+            <img alt="icon image" class="icon" style="display: none;" />            
+            <h2 class="messages">Inicie um jogo ou junte-se a uma partida</h2>
+            <button id="start">Iniciar</button>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/game.js"></script>
+
+</body>
+
+</html>
